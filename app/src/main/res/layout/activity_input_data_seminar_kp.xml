@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputDataSeminarKP"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="18dp">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="410dp"
+        android:layout_height="733dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView_Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/data_seminar_kp"
+            android:textAllCaps="false"
+            android:textColor="#007AFF"
+            android:textSize="18sp"
+            android:translationX="24dp"
+            android:translationY="50dp"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+        <TextView
+            android:id="@+id/textView_Judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judul1"
+            android:textSize="14sp"
+            android:translationX="20dp"
+            android:translationY="65dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_Judul"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_colom"
+            android:ems="10"
+            android:hint=""
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:text=""
+            android:translationX="20dp"
+            android:translationY="70dp"
+            tools:ignore="LabelFor,MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="86dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView_DosenPembimbing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dosen_pembimbing1"
+            android:textSize="14sp"
+            android:translationX="20dp"
+            android:translationY="75dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="323dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_DosenPembimbing"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_colom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:translationX="20dp"
+            android:translationY="80dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="342dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView_InstansiKP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instansi_kerja_praktek1"
+            android:translationX="20dp"
+            android:translationY="85dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_InstansiKP"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_colom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:translationX="20dp"
+            android:translationY="90dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="439dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat_kerja"
+            android:translationX="20dp"
+            android:translationY="95dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_alamat"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_colom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:translationX="20dp"
+            android:translationY="100dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="254dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView_TanggalKP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal_kerja_praktek"
+            android:translationX="20dp"
+            android:translationY="105dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_TanggalKP"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_colom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:translationX="20dp"
+            android:translationY="110dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="171dp"
+            android:autofillHints="" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="25dp"
+            android:translationY="200dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+            android:contentDescription="@string/todo"
+            tools:ignore="RtlHardcoded"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

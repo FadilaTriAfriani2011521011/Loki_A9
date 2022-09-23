@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputPesertaSeminarKP">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="410dp"
+        android:layout_height="730dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_Pesertaseminarkp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/peserta_seminar_kp"
+            android:textAllCaps="false"
+            android:textColor="#007AFF"
+            android:textSize="18sp"
+            android:translationX="24dp"
+            android:translationY="50dp"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="36dp"/>
+
+        <TextView
+            android:id="@+id/textView_Anggota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anggota_1"
+            android:textSize="14sp"
+            android:translationX="20dp"
+            android:translationY="65dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="236dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_Nama1"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_colompeserta"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/nama0"
+            android:translationX="20dp"
+            android:translationY="70dp"
+            tools:ignore="LabelFor,MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="86dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_NIM1"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:background="@drawable/custom_colompeserta"
+            android:inputType="textPersonName"
+            android:text="@string/nim1"
+            android:translationX="20dp"
+            android:translationY="75dp"
+            tools:ignore="LabelFor,MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="86dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView_Anggota2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anggota_2"
+            android:textSize="14sp"
+            android:translationX="20dp"
+            android:translationY="80dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_Nama2"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:background="@drawable/custom_colompeserta"
+            android:inputType="textPersonName"
+            android:text="@string/nama1"
+            android:translationX="20dp"
+            android:translationY="80dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="342dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_NIM2"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:background="@drawable/custom_colompeserta"
+            android:inputType="textPersonName"
+            android:text="@string/nim2"
+            android:translationX="20dp"
+            android:translationY="85dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="342dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView_Anggota3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anggota_3"
+            android:translationX="20dp"
+            android:translationY="90dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_Nama3"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:background="@drawable/custom_colompeserta"
+            android:inputType="textPersonName"
+            android:text="@string/nama2"
+            android:translationX="20dp"
+            android:translationY="90dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="439dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_NIM3"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:background="@drawable/custom_colompeserta"
+            android:inputType="textPersonName"
+            android:text="@string/nim3"
+            android:translationX="20dp"
+            android:translationY="95dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="439dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView_Anggota4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anggota_4"
+            android:translationX="20dp"
+            android:translationY="100dp"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_Nama4"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:background="@drawable/custom_colompeserta"
+            android:inputType="textPersonName"
+            android:text="@string/nama3"
+            android:translationX="20dp"
+            android:translationY="100dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="254dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_NIM4"
+            android:layout_width="373dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:background="@drawable/custom_colompeserta"
+            android:inputType="textPersonName"
+            android:text="@string/nim4"
+            android:translationX="20dp"
+            android:translationY="105dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="254dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custombutton"
+            android:text="@string/submit1"
+            android:translationY="110dp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="608dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
