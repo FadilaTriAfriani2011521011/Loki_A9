@@ -36,4 +36,11 @@
     <string name="tanggal_kerja_praktek">Tanggal Kerja Praktek</string>
     <string name="nama0">Nama</string>
     <string name="todo">TODO</string>
+    <string name="laporan_kp">Laporan KP</string>
+    <string name="laporanKP_nama">Nama</string>
+    <string name="LaporanKP_nama1">Nama</string>
+    <string name="laporanKP_nama2">Nama</string>
+    <string name="laporanKP_nama3">Nama</string>
+    <string name="todo_laporanakhirKP">TODO</string>
+    <string name="todo_InputdataseminarKP">TODO</string>
 </resources>
