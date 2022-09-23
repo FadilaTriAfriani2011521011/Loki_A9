@@ -1,14 +1,12 @@
-package id.ac.unand.loki_a9;
+package id.ac.unand.loki_a9
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import id.ac.unand.loki_a9.R
 
-import android.os.Bundle;
-
-public class InputDataSeminarKP extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_input_data_seminar_kp);
+class InputDataSeminarKP : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_input_data_seminar_kp)
     }
 }
