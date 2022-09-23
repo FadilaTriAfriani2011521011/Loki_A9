@@ -5,14 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class ganti_pass : AppCompatActivity() {
+class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ganti_pass)
+        setContentView(R.layout.activity_home)
 
-        val btn: Button = findViewById(R.id.button7)
+        val btn: Button = findViewById(R.id.button30)
         btn.setOnClickListener {
-            intent = Intent(this, Ubah::class.java)
+            intent = Intent(this, Login::class.java)
             startActivity(intent)
+        }
     }
-}}
+}

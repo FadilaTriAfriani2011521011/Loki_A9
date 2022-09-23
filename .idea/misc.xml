@@ -3,12 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/drawable-anydpi/ic_NIM.xml" value="0.184" />
         <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
-        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_edit_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_edit.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
         <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_ganti_pass.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_lgn.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_login2.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_masuk.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_profil.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_profile.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_test.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_ubah.xml" value="0.22" />
       </map>
     </option>
   </component>
