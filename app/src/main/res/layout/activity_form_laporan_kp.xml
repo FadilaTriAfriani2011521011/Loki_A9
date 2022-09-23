@@ -6,218 +6,202 @@
     android:layout_height="match_parent"
     tools:context=".formLaporanKP">
 
-    <LinearLayout
-        android:id="@+id/ll1"
-        android:layout_width="410dp"
-        android:layout_height="846dp"
-        android:layout_marginStart="4dp"
-        android:orientation="vertical"
-        android:translationX="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView_laporanKP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/form_laporan_kp"
+        android:textColor="#007AFF"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView_formlaporanKP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/form_laporan_kp"
-            android:textAllCaps="false"
-            android:textColor="#007AFF"
-            android:textSize="18sp"
-            android:translationX="24dp"
-            android:translationY="50dp"
-            tools:layout_editor_absoluteX="24dp"
-            tools:layout_editor_absoluteY="36dp" />
+    <TextView
+        android:id="@+id/textView_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/nama3"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_laporanKP" />
 
-        <TextView
-            android:id="@+id/textView_nama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nama"
-            android:textSize="14sp"
-            android:translationX="20dp"
-            android:translationY="65dp"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="236dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="322dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_colom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nama"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="373dp"
-            android:layout_height="48dp"
-            android:background="@drawable/custom_colom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:singleLine="false"
-            android:text=""
-            android:translationX="20dp"
-            android:translationY="70dp"
-            tools:ignore="LabelFor,MissingConstraints"
-            tools:layout_editor_absoluteX="17dp"
-            tools:layout_editor_absoluteY="86dp"
-            android:autofillHints="" />
+    <TextView
+        android:id="@+id/textView_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/nim4"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-        <TextView
-            android:id="@+id/textView_NIM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nim"
-            android:textSize="14sp"
-            android:translationX="20dp"
-            android:translationY="75dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="323dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName_nim"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_colom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nim"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
-        <EditText
-            android:layout_width="373dp"
-            android:layout_height="48dp"
-            android:background="@drawable/custom_colom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            android:translationX="20dp"
-            android:translationY="80dp"
-            tools:layout_editor_absoluteX="15dp"
-            tools:layout_editor_absoluteY="342dp"
-            android:autofillHints=""
-            tools:ignore="LabelFor" />
+    <TextView
+        android:id="@+id/textView_doesnpembimbing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/dosen_pembimbing1"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_nim" />
 
-        <TextView
-            android:id="@+id/textView_dosenpembimbing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dosen_pembimbing"
-            android:translationX="20dp"
-            android:translationY="85dp"
-            tools:layout_editor_absoluteX="15dp"
-            tools:layout_editor_absoluteY="417dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName_dosenpembimbing"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_colom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_doesnpembimbing"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
-        <EditText
-            android:layout_width="373dp"
-            android:layout_height="48dp"
-            android:background="@drawable/custom_colom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            android:translationX="20dp"
-            android:translationY="90dp"
-            tools:layout_editor_absoluteX="15dp"
-            tools:layout_editor_absoluteY="439dp"
-            android:autofillHints=""
-            tools:ignore="LabelFor" />
+    <TextView
+        android:id="@+id/textView_instansiKP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/instansi_kerja_praktek1"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_dosenpembimbing" />
 
-        <TextView
-            android:id="@+id/textView_InstansiKP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/instansi_kerja_praktek"
-            android:translationX="20dp"
-            android:translationY="95dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="17dp"
-            tools:layout_editor_absoluteY="67dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName_instansiKP"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_colom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_instansiKP"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="373dp"
-            android:layout_height="48dp"
-            android:background="@drawable/custom_colom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            android:translationX="20dp"
-            android:translationY="100dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="254dp"
-            android:autofillHints=""
-            tools:ignore="LabelFor" />
+    <TextView
+        android:id="@+id/textView_alamat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/alamat_kerja_praktek"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_instansiKP" />
 
-        <TextView
-            android:id="@+id/textView_alamatKP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/alamat_kerja_praktek"
-            android:translationX="20dp"
-            android:translationY="105dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="153dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName13"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_colom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_alamat1"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
-        <EditText
-            android:layout_width="373dp"
-            android:layout_height="48dp"
-            android:background="@drawable/custom_colom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            android:translationX="20dp"
-            android:translationY="110dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="171dp"
-            android:autofillHints=""
-            tools:ignore="LabelFor" />
+    <TextView
+        android:id="@+id/textView_judul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/judul1"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13" />
 
-        <TextView
-            android:id="@+id/textView_judul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/judul"
-            android:translationX="20dp"
-            android:translationY="115dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="153dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName_judul1"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_colom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_judul1"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName6"
-            android:layout_width="373dp"
-            android:layout_height="48dp"
-            android:background="@drawable/custom_colom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            android:translationX="20dp"
-            android:translationY="120dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="171dp"
-            android:autofillHints=""
-            tools:ignore="LabelFor" />
+    <TextView
+        android:id="@+id/textView_laporanakhirKP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/laporan_akhir_kerja_praktek"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_judul1" />
 
-        <TextView
-            android:id="@+id/textView_laporanakhirKP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/laporan_akhir_kerja_praktek"
-            android:translationX="20dp"
-            android:translationY="125dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="153dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName_laporanakhirKP"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_colom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_laporanakhirKP"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName_TanggalKP"
-            android:layout_width="373dp"
-            android:layout_height="150dp"
-            android:background="@drawable/custom_colom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            android:translationX="20dp"
-            android:translationY="130dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="171dp"
-            android:autofillHints=""
-            tools:ignore="LabelFor" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="273dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/custombutton"
-            android:text="@string/submit"
-            android:translationY="150dp"
-            tools:layout_editor_absoluteX="160dp"
-            tools:layout_editor_absoluteY="608dp" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#64FCD9"
+        android:text="@string/submit1"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_laporanakhirKP" />
 </androidx.constraintlayout.widget.ConstraintLayout>

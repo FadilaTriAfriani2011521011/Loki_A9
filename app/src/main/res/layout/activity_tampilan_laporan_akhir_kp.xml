@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tampilanLaporanAkhirKP">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/laporan_kp"
+        android:textColor="#007AFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_nama1"
+        android:layout_width="262dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="165dp"
+        android:backgroundTint="#50C2C9"
+        android:text="@string/laporanKP_nama"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_nama2"
+        android:layout_width="262dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#50C2C9"
+        android:text="@string/LaporanKP_nama1"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_nama1" />
+
+    <Button
+        android:id="@+id/button_nama3"
+        android:layout_width="262dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#50C2C9"
+        android:text="@string/laporanKP_nama2"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_nama2" />
+
+    <Button
+        android:id="@+id/button_nama4"
+        android:layout_width="262dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#50C2C9"
+        android:text="@string/laporanKP_nama3"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_nama3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_photoProfile_foreground"
+        android:contentDescription="@string/todo_laporanakhirKP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
