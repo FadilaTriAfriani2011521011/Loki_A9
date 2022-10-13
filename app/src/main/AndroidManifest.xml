@@ -14,10 +14,52 @@
         android:theme="@style/Theme.Loki_A9"
         tools:targetApi="31">
         <activity
+            android:name=".pengajuanKP"
+            android:exported="false" />
+        <activity
+            android:name=".detailKP"
+            android:exported="false" />
+        <activity
+            android:name=".seminarKP"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".absenKP"
+            android:exported="false" />
+        <activity
+            android:name=".UploadBalasanKP"
+            android:exported="false" />
+        <activity
+            android:name=".TambahLogbook"
+            android:exported="false" />
+        <activity
+            android:name=".Logbook"
+            android:exported="false" />
+        <activity
+            android:name=".ListLogbook"
+            android:exported="false" />
+        <activity
+            android:name=".EditLogbook"
+            android:exported="false" />
+        <activity
+            android:name=".tampilanLaporanAkhirKP"
+            android:exported="false" />
+        <activity
+            android:name=".InputPesertaSeminarKP"
+            android:exported="false" />
+        <activity
+            android:name=".InputDataSeminarKP"
+            android:exported="false" />
+        <activity
+            android:name=".formLaporanKP"
+            android:exported="false" />
+        <activity
             android:name=".ganti_pass"
             android:exported="false" />
         <activity
-            android:name=".main"
+            android:name=".login"
             android:exported="false" />
         <activity
             android:name=".edit_profile"
@@ -26,7 +68,7 @@
             android:name=".profile"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

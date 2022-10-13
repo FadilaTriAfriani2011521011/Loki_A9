@@ -19,4 +19,6 @@
     <string name="edit">Edit</string>
     <string name="email">Email</string>
     <string name="muhammaddoni_gmail_com">muhammaddoni@gmail.com</string>
+    <string name="todo_InputdataseminarKP">input_data_seminar_kp</string>
+    <string name="todo_laporanakhirKP">laporan_akhir_kp</string>
 </resources>
