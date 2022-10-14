@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class ganti_pass : AppCompatActivity() {
+class TambahLogbook : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ganti_pass)
+        setContentView(R.layout.activity_tambah_logbook)
 
-        val btn: Button = findViewById(R.id.button211)
+        val btn: Button = findViewById(R.id.button7)
         btn.setOnClickListener {
-            intent = Intent(this, edit_profile::class.java)
+            intent = Intent(this, ListLogbook::class.java)
             startActivity(intent)
         }
     }

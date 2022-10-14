@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class ganti_pass : AppCompatActivity() {
+class formLaporanKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ganti_pass)
+        setContentView(R.layout.activity_form_laporan_kp)
 
-        val btn: Button = findViewById(R.id.button211)
+        val btn: Button = findViewById(R.id.buttonsem)
         btn.setOnClickListener {
-            intent = Intent(this, edit_profile::class.java)
+            intent = Intent(this, tampilanLaporanAkhirKP::class.java)
             startActivity(intent)
         }
     }
