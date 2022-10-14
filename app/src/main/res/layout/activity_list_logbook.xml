@@ -6,21 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ListLogbook">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="254dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="76dp"
-        android:backgroundTint="#64FCD9"
-        android:onClick="onLogbookClicked"
-        android:text="06 September 2022               JUDUL KEGIATAN KP"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -35,43 +20,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="254dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="31dp"
-        android:backgroundTint="#64FCD9"
-        android:text="08 September 2022               JUDUL KEGIATAN KP"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/button60"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button60"
-        app:layout_constraintTop_toBottomOf="@+id/button60" />
-
-    <Button
-        android:id="@+id/button60"
-        android:layout_width="254dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="31dp"
-        android:backgroundTint="#64FCD9"
-        android:text="07 September 2022                JUDUL KEGIATAN KP"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="65dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_logbook"
+        android:layout_width="409dp"
+        android:layout_height="670dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/letter"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:listitem="@layout/item_logbook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

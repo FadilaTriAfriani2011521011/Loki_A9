@@ -10,16 +10,15 @@ class edit_profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile)
 
-        val btn: Button = findViewById(R.id.button4)
-        btn.setOnClickListener {
+        val btnganti_pass: Button = findViewById(R.id.button4)
+        btnganti_pass.setOnClickListener {
             intent = Intent(this, ganti_pass::class.java)
             startActivity(intent)
-
-            val btn: Button = findViewById(R.id.button5)
-            btn.setOnClickListener {
-                intent = Intent(this, profile::class.java)
-                startActivity(intent)
-            }
+        }
+        val btnprofile: Button = findViewById(R.id.button1000)
+        btnprofile.setOnClickListener {
+            intent = Intent(this, profile::class.java)
+            startActivity(intent)
         }
     }
 }

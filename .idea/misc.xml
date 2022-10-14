@@ -19,6 +19,7 @@
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_input_data_seminar_kp.xml" value="0.17552083333333332" />
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_input_peserta_seminar_kp.xml" value="0.17552083333333332" />
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_list_logbook.xml" value="0.17552083333333332" />
+        <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_list_pengajuan_kp.xml" value="0.17552083333333332" />
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_logbook.xml" value="0.17552083333333332" />
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
@@ -27,6 +28,8 @@
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_seminar_kp.xml" value="0.17552083333333332" />
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_tampilan_laporan_akhir_kp.xml" value="0.17552083333333332" />
         <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/activity_upload_balasan_kp.xml" value="0.17552083333333332" />
+        <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/item_logbook.xml" value="0.1" />
+        <entry key="..\:/ptb9/Loki_A9/app/src/main/res/layout/item_pengajuan.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

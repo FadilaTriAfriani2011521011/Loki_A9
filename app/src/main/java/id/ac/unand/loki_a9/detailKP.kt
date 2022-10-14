@@ -10,30 +10,29 @@ class detailKP : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_kp)
 
-        val btn: Button = findViewById(R.id.button11)
-        btn.setOnClickListener {
+        val btnTampilanLaporanAkhirKP: Button = findViewById(R.id.button11)
+        btnTampilanLaporanAkhirKP.setOnClickListener {
             intent = Intent(this, tampilanLaporanAkhirKP::class.java)
             startActivity(intent)
+        }
 
-        val btn: Button = findViewById(R.id.button9)
-        btn.setOnClickListener {
+        val btnListLogbook: Button = findViewById(R.id.button9)
+        btnListLogbook.setOnClickListener {
             intent = Intent(this, ListLogbook::class.java)
             startActivity(intent)
+        }
 
-        val btn: Button = findViewById(R.id.button8)
-        btn.setOnClickListener {
+        val btnUploadBalasanKP: Button = findViewById(R.id.button8)
+        btnUploadBalasanKP.setOnClickListener {
             intent = Intent(this, UploadBalasanKP::class.java)
             startActivity(intent)
+        }
 
 
-            val btn: Button = findViewById(R.id.button10)
-            btn.setOnClickListener {
-                intent = Intent(this, InputDataSeminarKP::class.java)
-                startActivity(intent)
-
-                    }
-                }
-            }
+        val btnInputDataSeminarKPSeminarKP: Button = findViewById(R.id.button10)
+        btnInputDataSeminarKPSeminarKP.setOnClickListener {
+            intent = Intent(this, InputDataSeminarKP::class.java)
+            startActivity(intent)
         }
     }
 }

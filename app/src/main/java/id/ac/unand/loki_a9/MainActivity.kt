@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         imageView11 = findViewById(R.id.imageView11)
         imageView11.setOnClickListener{
-            intent = Intent(applicationContext, pengajuanKP::class.java)
+            intent = Intent(applicationContext, ListPengajuanKP::class.java)
             startActivity(intent)
         }
         imageView4 = findViewById(R.id.imageView4)
