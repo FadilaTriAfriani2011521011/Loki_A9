@@ -48,6 +48,8 @@ class ListLogbook : AppCompatActivity() {
                 startActivity(intent)
             }
 
+
+
         })
 
     }

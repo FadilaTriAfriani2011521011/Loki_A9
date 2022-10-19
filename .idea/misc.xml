@@ -3,6 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_absen_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_detail_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_edit_logbook.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_edit_profile.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_form_laporan_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_ganti_pass.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_home.xml" value="0.536" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_input_data_seminar_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_input_peserta_seminar_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_list_logbook.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_list_pengajuan_kp.xml" value="0.2" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_logbook.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_login.xml" value="0.10104166666666667" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_main2.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_pengajuan_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_profile.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_seminar_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_tambah_logbook.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_tampilan_laporan_akhir_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_upload_balasan_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/home_view.xml" value="0.2" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/item_logbook.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/item_pengajuan.xml" value="0.21784420289855072" />
         <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
         <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_edit_profile.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/reCOnsult_L088/AndroidStudioProjects/Loki_A9/app/src/main/res/layout/activity_ganti_pass.xml" value="0.16666666666666666" />
