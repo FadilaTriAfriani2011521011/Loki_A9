@@ -9,6 +9,8 @@ class ganti_pass : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ganti_pass)
+        supportActionBar?.hide()
+
 
         val btn: Button = findViewById(R.id.button211)
         btn.setOnClickListener {

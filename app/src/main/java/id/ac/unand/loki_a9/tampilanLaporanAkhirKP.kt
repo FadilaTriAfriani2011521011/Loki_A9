@@ -9,6 +9,8 @@ class tampilanLaporanAkhirKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tampilan_laporan_akhir_kp)
+        supportActionBar?.hide()
+
 
         val btn: Button = findViewById(R.id.button_nama1)
         btn.setOnClickListener {

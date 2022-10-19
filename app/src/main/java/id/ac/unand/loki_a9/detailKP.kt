@@ -9,6 +9,8 @@ class detailKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_kp)
+        supportActionBar?.hide()
+
 
         val btnTampilanLaporanAkhirKP: Button = findViewById(R.id.button11)
         btnTampilanLaporanAkhirKP.setOnClickListener {

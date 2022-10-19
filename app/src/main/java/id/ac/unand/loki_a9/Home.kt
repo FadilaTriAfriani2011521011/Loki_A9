@@ -32,7 +32,7 @@ class Home : AppCompatActivity() {
         val data =ArrayList<HomeModels>()
         data.add(HomeModels(1,"Pengajuan KP", null))
         data.add(HomeModels(1,"Detail KP", null))
-        data.add(HomeModels(1,"Informasi Seminar KP", null))
+        data.add(HomeModels(1,"Seminar KP", null))
 
         adapter = HomeAdapter(data)
         adapter.setOnClickListener(object : HomeAdapter.clickListener{

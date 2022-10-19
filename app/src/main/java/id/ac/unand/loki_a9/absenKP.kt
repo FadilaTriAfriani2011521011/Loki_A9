@@ -10,6 +10,8 @@ class absenKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_absen_kp)
+        supportActionBar?.hide()
+
 
         imageView = findViewById(R.id.imageView)
         imageView.setOnClickListener{

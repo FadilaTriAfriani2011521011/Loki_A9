@@ -20,6 +20,8 @@ class ListPengajuanKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_pengajuan_kp)
+        supportActionBar?.hide()
+
 
         rvpengajuan = findViewById(R.id.rv_pengajuan)
         rvpengajuan.layoutManager = LinearLayoutManager(this)

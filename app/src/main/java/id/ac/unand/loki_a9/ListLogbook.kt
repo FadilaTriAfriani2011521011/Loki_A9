@@ -21,6 +21,8 @@ class ListLogbook : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_logbook)
+        supportActionBar?.hide()
+
 
         rvlogbook = findViewById(R.id.rv_logbook)
         rvlogbook.layoutManager = LinearLayoutManager(this)

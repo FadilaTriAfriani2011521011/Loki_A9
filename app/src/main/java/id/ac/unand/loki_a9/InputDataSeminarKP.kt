@@ -11,6 +11,8 @@ class InputDataSeminarKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_input_data_seminar_kp)
+        supportActionBar?.hide()
+
         imageView22 = findViewById(R.id.imageView22)
         imageView22.setOnClickListener{
             intent = Intent(applicationContext, InputPesertaSeminarKP::class.java)

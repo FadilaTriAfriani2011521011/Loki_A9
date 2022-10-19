@@ -11,6 +11,8 @@ class Logbook : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_logbook)
+        supportActionBar?.hide()
+
 
         val headingTanggal : TextView = findViewById(R.id.textView12)
         val headingKegiatan : TextView = findViewById(R.id.textView13)
