@@ -17,13 +17,11 @@ class ListPengajuanKP : AppCompatActivity() {
     private lateinit var rvpengajuan : RecyclerView
     private lateinit var tempatList : ArrayList<PengajuanModels>
     private lateinit var adapter: PengajuanAdapter
-    private lateinit var imageView13 : ImageView
+    private lateinit var Home3 : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_pengajuan_kp)
-        supportActionBar?.hide()
-
 
         rvpengajuan = findViewById(R.id.rv_pengajuan)
         rvpengajuan.layoutManager = LinearLayoutManager(this)
@@ -42,6 +40,11 @@ class ListPengajuanKP : AppCompatActivity() {
         val btn: Button = findViewById(R.id.button3000)
         btn.setOnClickListener {
             intent = Intent(this, pengajuanKP::class.java)
+            startActivity(intent)
+        }
+        Home3 = findViewById(R.id.Home3)
+        Home3.setOnClickListener {
+            intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
         }
     }

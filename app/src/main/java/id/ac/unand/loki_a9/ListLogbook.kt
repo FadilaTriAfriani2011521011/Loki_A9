@@ -15,14 +15,13 @@ class ListLogbook : AppCompatActivity() {
     private lateinit var rvlogbook : RecyclerView
     private lateinit var logbookList : ArrayList<LogbookModels>
     private lateinit var adapter: LogbookAdapter
+    private lateinit var Back3 : ImageView
 
     private lateinit var imageView11: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_logbook)
-        supportActionBar?.hide()
-
 
         rvlogbook = findViewById(R.id.rv_logbook)
         rvlogbook.layoutManager = LinearLayoutManager(this)
@@ -50,9 +49,17 @@ class ListLogbook : AppCompatActivity() {
                 startActivity(intent)
             }
 
-
-
         })
+        Back3 = findViewById(R.id.Back3)
+        Back3.setOnClickListener {
+            intent = Intent(applicationContext, detailKP::class.java)
+            startActivity(intent)
+        }
 
+        val btn: Button = findViewById(R.id.buttontbh)
+        btn.setOnClickListener {
+            intent = Intent(this, TambahLogbook::class.java)
+            startActivity(intent)
+        }
     }
 }

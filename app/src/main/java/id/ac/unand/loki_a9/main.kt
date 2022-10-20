@@ -17,11 +17,11 @@ class main : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
-                Handler().postDelayed({
-                    startActivity(Intent(this, login::class.java))
-                    finish()
-                },3000)
-
-            }
+        Handler().postDelayed({
+            startActivity(Intent(this, login::class.java))
+            finish()
+        },3000)
 
     }
+
+}
