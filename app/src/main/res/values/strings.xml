@@ -21,4 +21,6 @@
     <string name="muhammaddoni_gmail_com">muhammaddoni@gmail.com</string>
     <string name="todo_InputdataseminarKP">input_data_seminar_kp</string>
     <string name="todo_laporanakhirKP">laporan_akhir_kp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

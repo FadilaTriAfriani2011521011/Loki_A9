@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var imageView4 : ImageView
     private lateinit var imageView7 : ImageView
     private lateinit var imageView8 : ImageView
+    private lateinit var imageView13 : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -33,6 +34,12 @@ class MainActivity : AppCompatActivity() {
         imageView8 = findViewById(R.id.imageView8)
         imageView8.setOnClickListener{
             intent = Intent(applicationContext, detailKP::class.java)
+            startActivity(intent)
+        }
+
+        imageView13 = findViewById(R.id.imageView13)
+        imageView13.setOnClickListener{
+            intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
         }
     }
