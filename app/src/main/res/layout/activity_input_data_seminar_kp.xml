@@ -12,14 +12,14 @@
         android:id="@+id/textView_dataseminarKP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="276dp"
+        android:layout_marginEnd="232dp"
         android:text="Data Seminar KP"
         android:textColor="#FF007AFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Back5"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -118,5 +118,15 @@
             android:layout_height="wrap_content"
             android:hint="Tanggal Kerja Praktek" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/Back5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

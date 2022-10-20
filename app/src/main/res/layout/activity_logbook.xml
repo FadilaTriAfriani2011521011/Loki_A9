@@ -25,7 +25,7 @@
         android:layout_width="338dp"
         android:layout_height="29dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="50dp"
         android:text="06 September 2022"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,14 +63,14 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="326dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="282dp"
         android:text="Logbook"
         android:textColor="#FF007AFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Back1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -93,5 +93,15 @@
         tools:layout_editor_absoluteX="343dp"
         tools:layout_editor_absoluteY="596dp"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/Back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
