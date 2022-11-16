@@ -10,13 +10,12 @@
         android:id="@+id/AbsenKP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="264dp"
+        android:layout_marginTop="44dp"
         android:text="Seminar KP"
         android:textColor="#FF007AFF"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toEndOf="@+id/Home4"
         app:layout_constraintTop_toTopOf="parent" />
 
