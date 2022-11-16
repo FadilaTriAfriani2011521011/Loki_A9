@@ -23,12 +23,14 @@ class PengajuanAdapter (private var tempatList : ArrayList<PengajuanModels>) :
 
     class pengajuanViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tempat: TextView = itemView.findViewById(R.id. tempat)
+        val tempat2 : TextView = itemView.findViewById(R.id.tempat2)
         val logoCompany : ImageView = itemView.findViewById(R.id.logoCompany)
     }
 
     override fun onBindViewHolder(holder: pengajuanViewHolder, position: Int) {
         val currentPosition = tempatList[position]
         holder.tempat.setText(currentPosition.tempat)
+        holder.tempat2.setText(currentPosition.tempat2)
         holder.logoCompany.setImageResource(currentPosition.logoCompany)
     }
     }

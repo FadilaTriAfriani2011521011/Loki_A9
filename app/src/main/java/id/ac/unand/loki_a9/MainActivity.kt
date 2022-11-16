@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
         imageView8 = findViewById(R.id.imageView8)
         imageView8.setOnClickListener{
-            intent = Intent(applicationContext, detailKP::class.java)
+            intent = Intent(applicationContext, DetailKP2::class.java)
             startActivity(intent)
         }
     }

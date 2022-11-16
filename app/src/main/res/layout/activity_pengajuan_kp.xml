@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="250dp"
         android:text="Pengajuan KP"
         android:textColor="#FF007AFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toEndOf="@+id/Back7"
         app:layout_constraintTop_toTopOf="parent" />
 
