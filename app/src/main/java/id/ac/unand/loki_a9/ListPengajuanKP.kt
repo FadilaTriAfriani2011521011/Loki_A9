@@ -29,10 +29,10 @@ class ListPengajuanKP : AppCompatActivity() {
 
         tempatList = ArrayList()
 
-        tempatList.add(PengajuanModels("LLDIKTI"))
-        tempatList.add(PengajuanModels("BPS"))
-        tempatList.add(PengajuanModels("Semen Padang"))
-        tempatList.add(PengajuanModels("BKKBN"))
+        tempatList.add(PengajuanModels("LLDIKTI", R.drawable.lldikti))
+        tempatList.add(PengajuanModels("BPS", R.drawable.bps))
+        tempatList.add(PengajuanModels("Semen Padang", R.drawable.semen_padang))
+        tempatList.add(PengajuanModels("BKKBN", R.drawable.bkkbn))
 
 
        adapter = PengajuanAdapter(tempatList)

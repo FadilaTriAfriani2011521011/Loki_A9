@@ -3,6 +3,7 @@ package id.ac.unand.loki_a9.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import id.ac.unand.loki_a9.R
@@ -21,12 +22,14 @@ class PengajuanAdapter (private var tempatList : ArrayList<PengajuanModels>) :
     }
 
     class pengajuanViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tempat: TextView = itemView.findViewById(R.id.tempat)
+        val tempat: TextView = itemView.findViewById(R.id. tempat)
+        val logoCompany : ImageView = itemView.findViewById(R.id.logoCompany)
     }
 
     override fun onBindViewHolder(holder: pengajuanViewHolder, position: Int) {
         val currentPosition = tempatList[position]
         holder.tempat.setText(currentPosition.tempat)
+        holder.logoCompany.setImageResource(currentPosition.logoCompany)
     }
     }
 
