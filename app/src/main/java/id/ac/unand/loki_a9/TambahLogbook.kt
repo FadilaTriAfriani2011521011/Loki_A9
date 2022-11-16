@@ -11,6 +11,7 @@ class TambahLogbook : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tambah_logbook)
+        supportActionBar?.hide()
 
         val btn: Button = findViewById(R.id.button7)
         btn.setOnClickListener {

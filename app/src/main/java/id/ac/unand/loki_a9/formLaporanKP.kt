@@ -9,6 +9,7 @@ class formLaporanKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form_laporan_kp)
+        supportActionBar?.hide()
 
         val btn: Button = findViewById(R.id.buttonsem)
         btn.setOnClickListener {

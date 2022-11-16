@@ -11,6 +11,7 @@ class seminarKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seminar_kp)
+        supportActionBar?.hide()
 
         val btn: Button = findViewById(R.id.buttonsem)
         btn.setOnClickListener {

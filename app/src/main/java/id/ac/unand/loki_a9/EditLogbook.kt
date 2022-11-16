@@ -11,6 +11,7 @@ class EditLogbook : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_logbook)
+        supportActionBar?.hide()
 
         val btnLogbook : Button = findViewById (R.id.buttonlog)
         btnLogbook.setOnClickListener {

@@ -10,6 +10,7 @@ class InputPesertaSeminarKP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_input_peserta_seminar_kp)
+        supportActionBar?.hide()
 
         val btn: Button = findViewById(R.id.button60)
         btn.setOnClickListener {
