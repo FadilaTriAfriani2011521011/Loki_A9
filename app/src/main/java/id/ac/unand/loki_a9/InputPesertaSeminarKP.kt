@@ -14,7 +14,7 @@ class InputPesertaSeminarKP : AppCompatActivity() {
 
         val btn: Button = findViewById(R.id.button60)
         btn.setOnClickListener {
-            intent = Intent(this, detailKP::class.java)
+            intent = Intent(this, DetailKP2::class.java)
             startActivity(intent)
         }
     }

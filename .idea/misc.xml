@@ -6,7 +6,7 @@
         <entry key="..\:/Loki_A9/app/src/main/res/drawable/ic_lock.xml" value="0.1" />
         <entry key="..\:/Loki_A9/app/src/main/res/drawable/ic_username.xml" value="0.1" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_absen_kp.xml" value="0.21784420289855072" />
-        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_detail_kp.xml" value="0.4" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_detail_kp.xml" value="0.136" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_detail_kp2.xml" value="0.264" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_edit_logbook.xml" value="0.21784420289855072" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_edit_profile.xml" value="0.21784420289855072" />
@@ -26,7 +26,7 @@
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_profile.xml" value="0.21784420289855072" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_seminar_kp.xml" value="0.264" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_tambah_logbook.xml" value="0.21784420289855072" />
-        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_tampilan_laporan_akhir_kp.xml" value="0.21784420289855072" />
+        <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_tampilan_laporan_akhir_kp.xml" value="0.264" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_test.xml" value="0.228125" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/activity_upload_balasan_kp.xml" value="0.21784420289855072" />
         <entry key="..\:/Loki_A9/app/src/main/res/layout/fragment_detail_kp.xml" value="0.19610507246376813" />
