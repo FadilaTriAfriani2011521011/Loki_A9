@@ -7,6 +7,7 @@
     tools:context=".tampilanLaporanAkhirKP">
 
     <TextView
+
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,10 +17,23 @@
         android:textColor="#007AFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
+
+        android:id="@+id/AbsenKP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Laporan KP"
+        android:textColor="#FF007AFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toEndOf="@+id/Back4"
+
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_nama1"
+
         android:layout_width="262dp"
         android:layout_height="69dp"
         android:layout_marginTop="165dp"
@@ -82,3 +96,137 @@
         android:contentDescription="@string/todo_laporanakhirKP" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+        android:layout_width="328dp"
+        android:layout_height="93dp"
+        android:backgroundTint="#FFFFFF"
+        android:shadowColor="@color/black"
+        android:text="Isi Form Laporan KP"
+        android:textColor="#FF03DAC5"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <Button
+        android:id="@+id/button_nama"
+        android:layout_width="328dp"
+        android:layout_height="93dp"
+        android:backgroundTint="#FFFFFF"
+        android:shadowColor="@color/black"
+        android:text="Lapor KP Selesai"
+        android:textColor="#FF03DAC5"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <Button
+        android:id="@+id/button_nama2"
+        android:layout_width="328dp"
+        android:layout_height="93dp"
+        android:backgroundTint="#FFFFFF"
+        android:shadowColor="@color/black"
+        android:text="Lihat"
+        android:textColor="#FF03DAC5"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Laporan Akhir Kerja Praktek"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AbsenKP" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Penilaian Kerja Praktek"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_nama" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Konfirmasi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/button_nama1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Setelah menyelesaikan kerja praktek yang berdurasi 30 hari kerja upload laporan sesuai dengan format yang disediakan jurusan. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Apabila sudah menyelesaikan tahapan pada kerja praktek, lapor kepada jurusan anda sudah menyelesaikan kerja praktek. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Lihat penilaian akhir beserta komponen penilaian kerja praktek anda. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ImageView
+        android:id="@+id/Back4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
