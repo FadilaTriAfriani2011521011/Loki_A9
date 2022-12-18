@@ -1,16 +1,16 @@
 package id.ac.unand.loki_a9.retrofit
 
-import retrofit2.http.POST
-import id.ac.unand.loki_a9.datamodels.LoginResponse
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
+import retrofit2.http.*
 
 interface Login {
     @FormUrlEncoded
-    @POST("login")
-    fun login(
-        @Field("username") username: String,
-        @Field("password") password: String
-    ): Call<LoginResponse?>?
+    @POST("/api/login/")
+    fun login(@Field("username") username:String, @Field("password") password:String):Call<LoginResponse>
+
+    @GET("/api/me")
+    fun profile(@Header("Authorization") token:String):Call<User>
+
+    @POST("/api/me/update")
+    fun updateProfile(@Header("Authorization") token:String)
 }

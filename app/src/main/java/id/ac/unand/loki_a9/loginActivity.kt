@@ -1,6 +1,8 @@
 package id.ac.unand.loki_a9
 
+import android.content.Context
 import android.content.Intent
+import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,7 +13,9 @@ import okhttp3.OkHttpClient
 import android.widget.Toast
 import android.util.Log
 import android.view.View
-import id.ac.unand.loki_a9.datamodels.LoginResponse
+import id.ac.unand.loki_a9.databinding.ActivityLoginBinding
+import id.ac.unand.loki_a9.retrofit.Config
+import id.ac.unand.loki_a9.retrofit.LoginResponse
 import id.ac.unand.loki_a9.retrofit.Login
 import retrofit2.Call
 import retrofit2.Callback
@@ -19,59 +23,56 @@ import retrofit2.Response
 
 
 class loginActivity : AppCompatActivity() {
-    lateinit var editEmail: EditText
-    lateinit var editPassword: EditText
-    lateinit var buttonLogin: Button
 
+    lateinit var binding : ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-        cekLogin()
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-//        supportActionBar?.hide()
-//        val btn: Button = findViewById(R.id.buttonLogin)
-//        btn.setOnClickListener {
-//            intent = Intent(this, homescreenActivity::class.java)
-//            startActivity(intent)
         }
-fun cekLogin() {
-    editEmail = findViewById(R.id.editEmail)
-    editPassword = findViewById(R.id.editPassword)
-    buttonLogin = findViewById(R.id.buttonLogin)
-    buttonLogin.setOnClickListener(View.OnClickListener {
-        val API_BASE_URL = "http://ptb-api.husnilkamil.my.id"
-        var username = editEmail.getText().toString()
-        var password = editPassword.getText().toString()
-        val retrofit = Retrofit.Builder()
-            .baseUrl(API_BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .client(OkHttpClient.Builder().build())
-            .build()
-        val client = retrofit.create(Login::class.java)
-        val call = client.login(username, password)
-        call!!.enqueue(object : Callback<LoginResponse?> {
-            override fun onResponse(
-                call: Call<LoginResponse?>,
-                response: Response<LoginResponse?>
-            ) {
-                val loginResponse = response.body()
-                Log.d("loginResponse", "login response error")
-                if (loginResponse != null) {
-                    Toast.makeText(this@loginActivity, "Kamu Berhasil Login", Toast.LENGTH_SHORT)
-                        .show()
-                    val mainIntent = Intent(this@loginActivity, mainActivity::class.java)
-                    startActivity(mainIntent)
-                }
-                else {
-                    Toast.makeText(this@loginActivity, "Lengkapi Data Login", Toast.LENGTH_SHORT)
-                        .show()
-                }
+
+    fun onButtonLoginClicked(view: View) {
+        val username = binding.editEmail.text.toString()
+        val password = binding.editPassword.text.toString()
+
+        val client: Login = Config().getService()
+
+        val call: Call<LoginResponse> = client.login(username,password)
+
+        call.enqueue(object: Callback<LoginResponse> {
+            override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                Log.d("login-debug",t.localizedMessage)
+                Toast.makeText(this@loginActivity, t.localizedMessage, Toast.LENGTH_SHORT).show()
             }
 
-            override fun onFailure(call: Call<LoginResponse?>, t: Throwable) {
-                Toast.makeText(this@loginActivity, "Maaf, Kamu Gagal Login", Toast.LENGTH_SHORT).show()
+            override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+
+                //ambil respon login
+                val respon: LoginResponse? = response.body();
+                if (respon != null && respon.status == "success" ) {
+
+                    //ambil Token
+                    val token = respon.authorisation?.token
+                    Log.d("login-debug",username +":"+ password +"|"+ token)
+
+                    //Shared Preference
+                    val sharedPref = getSharedPreferences("sharedpref", Context.MODE_PRIVATE) ?:return
+                    with (sharedPref.edit()) {
+                        putString("TOKEN", token)
+                        apply()
+                    }
+                    Toast.makeText(this@loginActivity, "Login Berhasil", Toast.LENGTH_SHORT).show()
+
+                    intent = Intent(applicationContext, homescreenActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this@loginActivity, "Username atau Password yang anda masukkan salah", Toast.LENGTH_SHORT).show()
+                }
             }
         })
-    })
+    }
 
-}}
+
+}
