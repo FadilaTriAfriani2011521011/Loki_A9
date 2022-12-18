@@ -6,21 +6,21 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 
-class pengajuanKP : AppCompatActivity() {
-    private lateinit var Back7 : ImageView
+class profileActivity : AppCompatActivity() {
+    private lateinit var Home2 : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pengajuan_kp)
+        setContentView(R.layout.activity_profile)
         supportActionBar?.hide()
 
-        val btn: Button = findViewById(R.id.button12)
+        val btn: Button = findViewById(R.id.button110)
         btn.setOnClickListener {
-            intent = Intent(this, ListPengajuanKP::class.java)
+            intent = Intent(this, edit_profileActivity::class.java)
             startActivity(intent)
         }
-        Back7 = findViewById(R.id.Back7)
-        Back7.setOnClickListener {
-            intent = Intent(applicationContext, ListPengajuanKP::class.java)
+        Home2 = findViewById(R.id.Home2)
+        Home2.setOnClickListener {
+            intent = Intent(applicationContext, homescreenActivity::class.java)
             startActivity(intent)
         }
     }

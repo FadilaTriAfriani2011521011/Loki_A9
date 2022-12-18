@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 
-class Logbook : AppCompatActivity() {
+class LogbookActivity : AppCompatActivity() {
     private lateinit var imageView6: ImageView
     private lateinit var Back1: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,13 +27,13 @@ class Logbook : AppCompatActivity() {
 
         imageView6 = findViewById(R.id.imageView6)
         imageView6.setOnClickListener {
-            intent = Intent(applicationContext, EditLogbook::class.java)
+            intent = Intent(applicationContext, EditLogbookActivity::class.java)
             startActivity(intent)
         }
 
         Back1 = findViewById(R.id.Back1)
         Back1.setOnClickListener {
-            intent = Intent(applicationContext, ListLogbook::class.java)
+            intent = Intent(applicationContext, ListLogbookActivity::class.java)
             startActivity(intent)
         }
     }

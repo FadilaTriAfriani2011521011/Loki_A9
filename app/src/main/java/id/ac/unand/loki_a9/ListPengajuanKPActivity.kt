@@ -13,12 +13,10 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import id.ac.unand.loki_a9.adapter.LogbookAdapter
 import id.ac.unand.loki_a9.adapter.PengajuanAdapter
-import id.ac.unand.loki_a9.models.LogbookModels
 import id.ac.unand.loki_a9.models.PengajuanModels
 
-class ListPengajuanKP : AppCompatActivity() {
+class ListPengajuanKPActivity : AppCompatActivity() {
 
     private lateinit var rvpengajuan : RecyclerView
     private lateinit var tempatList : ArrayList<PengajuanModels>
@@ -59,7 +57,7 @@ class ListPengajuanKP : AppCompatActivity() {
         }
         Home3 = findViewById(R.id.Home3)
         Home3.setOnClickListener {
-            intent = Intent(applicationContext, MainActivity::class.java)
+            intent = Intent(applicationContext, homescreenActivity::class.java)
             startActivity(intent)
         }
 

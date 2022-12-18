@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 
-class TambahLogbook : AppCompatActivity() {
+class TambahLogbookActivity : AppCompatActivity() {
     private lateinit var Back6 : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,12 +15,12 @@ class TambahLogbook : AppCompatActivity() {
 
         val btn: Button = findViewById(R.id.button7)
         btn.setOnClickListener {
-            intent = Intent(this, ListLogbook::class.java)
+            intent = Intent(this, ListLogbookActivity::class.java)
             startActivity(intent)
         }
         Back6 = findViewById(R.id.Back6)
         Back6.setOnClickListener {
-            intent = Intent(applicationContext, ListLogbook::class.java)
+            intent = Intent(applicationContext, ListLogbookActivity::class.java)
             startActivity(intent)
         }
     }

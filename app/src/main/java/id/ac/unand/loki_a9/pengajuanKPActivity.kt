@@ -6,21 +6,21 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 
-class tampilanLaporanAkhirKP : AppCompatActivity() {
-    private lateinit var Back4 : ImageView
+class pengajuanKPActivity : AppCompatActivity() {
+    private lateinit var Back7 : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tampilan_laporan_akhir_kp)
+        setContentView(R.layout.activity_pengajuan_kp)
         supportActionBar?.hide()
 
-        val btn: Button = findViewById(R.id.button_nama1)
+        val btn: Button = findViewById(R.id.button12)
         btn.setOnClickListener {
-            intent = Intent(this, formLaporanKP::class.java)
+            intent = Intent(this, ListPengajuanKPActivity::class.java)
             startActivity(intent)
         }
-        Back4 = findViewById(R.id.Back4)
-        Back4.setOnClickListener {
-            intent = Intent(applicationContext, detailKP::class.java)
+        Back7 = findViewById(R.id.Back7)
+        Back7.setOnClickListener {
+            intent = Intent(applicationContext, ListPengajuanKPActivity::class.java)
             startActivity(intent)
         }
     }

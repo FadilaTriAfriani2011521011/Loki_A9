@@ -4,21 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
 
-class login : AppCompatActivity() {
+class InputPesertaSeminarKPActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_input_peserta_seminar_kp)
         supportActionBar?.hide()
 
-        val btn: Button = findViewById(R.id.button2)
+        val btn: Button = findViewById(R.id.button60)
         btn.setOnClickListener {
-            intent = Intent(this, MainActivity::class.java)
+            intent = Intent(this, DetailKP2Activity::class.java)
             startActivity(intent)
-
-
         }
     }
 }

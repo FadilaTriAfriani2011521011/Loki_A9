@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 
-class absenKP : AppCompatActivity() {
+class absenKPActivity : AppCompatActivity() {
     private lateinit var imageView : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +14,7 @@ class absenKP : AppCompatActivity() {
 
         imageView = findViewById(R.id.imageView)
         imageView.setOnClickListener{
-            intent = Intent(applicationContext, seminarKP::class.java)
+            intent = Intent(applicationContext, seminarKPActivity::class.java)
             startActivity(intent)
         }
     }

@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".login" >
+    tools:context=".loginActivity" >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="ExtraText">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonLogin"
             android:layout_width="293dp"
             android:layout_height="47dp"
             android:layout_marginTop="15dp"
@@ -66,24 +67,25 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout49"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_username"
-            app:boxCornerRadiusTopStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusBottomEnd="16dp"
-            android:paddingRight="32dp"
-            android:paddingLeft="32dp"
-            app:endIconMode="clear_text"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="1dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:endIconMode="clear_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11">
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:startIconDrawable="@drawable/ic_username">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:hint="Username" />
@@ -92,24 +94,25 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout50"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_lock"
-            app:boxCornerRadiusTopStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusBottomEnd="16dp"
-            app:endIconMode="clear_text"
-            android:paddingLeft="32dp"
-            android:paddingRight="32dp"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="1dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:endIconMode="clear_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout49">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout49"
+            app:startIconDrawable="@drawable/ic_lock">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPassword"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:hint="Password" />

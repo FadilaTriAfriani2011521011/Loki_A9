@@ -11,7 +11,7 @@ import id.ac.unand.loki_a9.adapter.LogbookAdapter
 import id.ac.unand.loki_a9.models.LogbookModels
 
 
-class ListLogbook : AppCompatActivity() {
+class ListLogbookActivity : AppCompatActivity() {
     private lateinit var rvlogbook : RecyclerView
     private lateinit var logbookList : ArrayList<LogbookModels>
     private lateinit var adapter: LogbookAdapter
@@ -44,7 +44,7 @@ class ListLogbook : AppCompatActivity() {
 
         adapter.setOnItemClickListener(object : LogbookAdapter.onItemClickListener {
             override fun onItemClick(position: Int) {
-               val intent = Intent(this@ListLogbook, Logbook::class.java)
+               val intent = Intent(this@ListLogbookActivity, LogbookActivity::class.java)
                 intent.putExtra("tanggal",logbookList[position].tanggal)
                 intent.putExtra("kegiatan",logbookList[position].kegiatan)
                 startActivity(intent)
@@ -53,13 +53,13 @@ class ListLogbook : AppCompatActivity() {
         })
         Back3 = findViewById(R.id.Back3)
         Back3.setOnClickListener {
-            intent = Intent(applicationContext, detailKP::class.java)
+            intent = Intent(applicationContext, DetailKP2Activity::class.java)
             startActivity(intent)
         }
 
         val btn: Button = findViewById(R.id.buttontbh)
         btn.setOnClickListener {
-            intent = Intent(this, TambahLogbook::class.java)
+            intent = Intent(this, TambahLogbookActivity::class.java)
             startActivity(intent)
         }
     }

@@ -4,10 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 @Suppress("DEPRECATION")
-class main : AppCompatActivity() {
+class mainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(
@@ -18,7 +19,7 @@ class main : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            startActivity(Intent(this, login::class.java))
+            startActivity(Intent(this, loginActivity::class.java))
             finish()
         },3000)
 

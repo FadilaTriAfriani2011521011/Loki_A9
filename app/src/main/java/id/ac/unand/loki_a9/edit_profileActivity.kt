@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class edit_profile : AppCompatActivity() {
+class edit_profileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile)
@@ -13,12 +13,12 @@ class edit_profile : AppCompatActivity() {
 
         val btnganti_pass: Button = findViewById(R.id.button4)
         btnganti_pass.setOnClickListener {
-            intent = Intent(this, ganti_pass::class.java)
+            intent = Intent(this, ganti_passActivity::class.java)
             startActivity(intent)
         }
         val btnprofile: Button = findViewById(R.id.button1000)
         btnprofile.setOnClickListener {
-            intent = Intent(this, profile::class.java)
+            intent = Intent(this, profileActivity::class.java)
             startActivity(intent)
         }
     }
