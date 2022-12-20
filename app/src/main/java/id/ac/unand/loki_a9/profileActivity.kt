@@ -1,5 +1,6 @@
 package id.ac.unand.loki_a9
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,28 @@ class profileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
         supportActionBar?.hide()
+
+        val btnLogout: Button = findViewById(R.id.logout)
+        btnLogout.setOnClickListener{
+            val sharedPref = getSharedPreferences("prefs", Context.MODE_PRIVATE)
+            with (sharedPref.edit()) {
+                putString("token", null)
+                apply()
+            }
+
+            intent = Intent(applicationContext, loginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val sharedPref = getSharedPreferences("prefs",Context.MODE_PRIVATE) ?: return
+        val ada = sharedPref.getString("token",null)
+
+        if (ada==null){
+            intent = Intent(applicationContext, loginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         val btn: Button = findViewById(R.id.button110)
         btn.setOnClickListener {
