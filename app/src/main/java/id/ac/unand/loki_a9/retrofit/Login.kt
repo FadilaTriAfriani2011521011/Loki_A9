@@ -11,6 +11,22 @@ interface Login {
     @GET("/api/me")
     fun profile(@Header("Authorization") token:String):Call<User>
 
+    @FormUrlEncoded
     @POST("/api/me/update")
-    fun updateProfile(@Header("Authorization") token:String)
+    fun updateProfile(
+        @Header("Authorization") token:String,
+        @Field("name") name:String,
+        @Field("email") email:String
+    ):Call<UpdateProfilResponse>
+
+    @FormUrlEncoded
+    @POST("/api/password")
+    fun updatePassword(
+        @Header("Authorization")token: String,
+        @Field("old_password") old_password:String,
+        @Field("new_password") new_password:String,
+        @Field("confirm_password") confirm_password:String
+    ):Call<ChangePasswordResponse>
+//    @POST("/api/logout")
+//    fun logout(@Header("Authorization") token: String):Call<LogoutResponse>
 }

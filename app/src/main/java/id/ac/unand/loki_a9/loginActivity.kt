@@ -15,8 +15,8 @@ import android.util.Log
 import android.view.View
 import id.ac.unand.loki_a9.databinding.ActivityLoginBinding
 import id.ac.unand.loki_a9.retrofit.Config
-import id.ac.unand.loki_a9.retrofit.LoginResponse
 import id.ac.unand.loki_a9.retrofit.Login
+import id.ac.unand.loki_a9.retrofit.LoginResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
