@@ -27,14 +27,14 @@ class profileActivity : AppCompatActivity() {
             finish()
         }
 
-        val sharedPref = getSharedPreferences("prefs",Context.MODE_PRIVATE) ?: return
-        val ada = sharedPref.getString("token",null)
-
-        if (ada==null){
-            intent = Intent(applicationContext, loginActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        val sharedPref = getSharedPreferences("prefs",Context.MODE_PRIVATE) ?: return
+//        val ada = sharedPref.getString("token",null)
+//
+//        if (ada==null){
+//            intent = Intent(applicationContext, loginActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
 
         val btn: Button = findViewById(R.id.button110)
         btn.setOnClickListener {
