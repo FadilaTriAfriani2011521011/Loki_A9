@@ -59,6 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passLama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password Lama" />
@@ -82,6 +83,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout33">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passBaru"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password Baru" />
@@ -105,6 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout34">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Reset Password" />
