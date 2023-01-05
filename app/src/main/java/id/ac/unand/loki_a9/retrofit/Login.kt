@@ -44,8 +44,6 @@ interface Login {
     @POST("/api/my-internship/{id}/logbook")
     fun tambah_logbook(@Header("Authorization")token: String,
                        @Path("id") id: Int,
-                       @Path("id_logbook") id_logbook: String?,
-                       @Field("status") status:Int,
-                       @Field("note") note:String
+                       @Field("activities") activities:String
     ):Call<TambahLogbookResponse>
 }

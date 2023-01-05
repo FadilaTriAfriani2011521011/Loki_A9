@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,10 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import id.ac.unand.loki_a9.adapter.LogbookAdapter
 import id.ac.unand.loki_a9.databinding.ActivityListLogbookBinding
 import id.ac.unand.loki_a9.databinding.ItemLogbookBinding
-import id.ac.unand.loki_a9.retrofit.Config
-import id.ac.unand.loki_a9.retrofit.ListLogbookResponse
-import id.ac.unand.loki_a9.retrofit.LogbooksItem
-import id.ac.unand.loki_a9.retrofit.Login
+import id.ac.unand.loki_a9.retrofit.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -46,14 +44,14 @@ class ListLogbookActivity : AppCompatActivity() {
 
         val sharedPref = getSharedPreferences("sharedpref",Context.MODE_PRIVATE)?:return
         val token = sharedPref.getString("TOKEN",null)
-        val id = sharedPref.getInt("id",2)
+        val id = sharedPref.getInt("id",5)
 
         val data = ArrayList<LogbooksItem>()
         recyclerView = findViewById(R.id.rv_logbook_ku)
 
         Log.d("list-book-debug",token.toString())
         val client: Login = Config().getService()
-        val call: Call<ListLogbookResponse> = client.list_logbook(token = "Bearer " + token, id)
+        val call: Call<ListLogbookResponse> = client.list_logbook(token = "Bearer " +token,id)
 
         call.enqueue(object : Callback<ListLogbookResponse>{
             override fun onResponse(
@@ -69,7 +67,7 @@ class ListLogbookActivity : AppCompatActivity() {
                 Log.d("list-book-debug", respon?.logbooks?.size.toString())
                 Log.d("list-book-debug", "respon : " + respon?.logbooks.toString())
 
-                adapter.setOnClickListener(object : LogbookAdapter.onItemClickListener{
+                adapter.setOnClickListener(object : LogbookAdapter.onClickListener{
                     override fun onItemClick(position: Int) {
                         val posisi = respon?.logbooks?.get(position)
                         val sharedPref = getSharedPreferences("logbookpref", MODE_PRIVATE)?:return
@@ -92,7 +90,5 @@ class ListLogbookActivity : AppCompatActivity() {
         })
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
-
-
     }
 }

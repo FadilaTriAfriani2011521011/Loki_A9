@@ -24,7 +24,7 @@ class LogbookActivity : AppCompatActivity() {
         val sharedPref = getSharedPreferences("sharedpref", Context.MODE_PRIVATE)?:return
         val logbookRef = getSharedPreferences("logbookpref",Context.MODE_PRIVATE)?:return
         val token = sharedPref.getString("TOKEN",null)
-        val id = sharedPref.getInt("id",2)
+        val id = sharedPref.getInt("id",5)
         val IDL = logbookRef.getString("id_logbook",null)
 
         Log.d("Detaioiii","respooonn"+IDL.toString())
