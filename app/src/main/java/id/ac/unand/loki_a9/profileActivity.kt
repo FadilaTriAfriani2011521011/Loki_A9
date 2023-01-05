@@ -13,11 +13,10 @@ import com.google.android.datatransport.runtime.scheduling.SchedulingConfigModul
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import id.ac.unand.loki_a9.retrofit.Login
-import id.ac.unand.loki_a9.retrofit.UpdateProfilResponse
-import id.ac.unand.loki_a9.retrofit.User
-import id.ac.unand.loki_a9.retrofit.Config
 import id.ac.unand.loki_a9.databinding.ActivityProfileBinding
+import id.ac.unand.loki_a9.retrofit.Config
+import id.ac.unand.loki_a9.retrofit.Login
+import id.ac.unand.loki_a9.retrofit.User
 
 class profileActivity : AppCompatActivity() {
     private lateinit var Home2 : ImageView
@@ -59,28 +58,6 @@ class profileActivity : AppCompatActivity() {
 
 
         supportActionBar?.hide()
-
-        val btnLogout: Button = findViewById(R.id.logout)
-        btnLogout.setOnClickListener{
-            val sharedPref = getSharedPreferences("prefs", Context.MODE_PRIVATE)
-            with (sharedPref.edit()) {
-                putString("token", null)
-                apply()
-            }
-
-            intent = Intent(applicationContext, loginActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-//        val sharedPref = getSharedPreferences("prefs",Context.MODE_PRIVATE) ?: return
-//        val ada = sharedPref.getString("token",null)
-//
-//        if (ada==null){
-//            intent = Intent(applicationContext, loginActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
 
         val btn: Button = findViewById(R.id.button110)
         btn.setOnClickListener {

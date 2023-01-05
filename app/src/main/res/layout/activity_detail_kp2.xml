@@ -20,7 +20,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="676dp"
         android:orientation="vertical">
 
         <TextView
@@ -33,8 +33,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             app:cardCornerRadius="16dp">
@@ -48,7 +48,7 @@
                     android:id="@+id/nama"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama     : Muhammad Doni"
+                    android:text="Nama     : Muhammad Taufik"
                     android:textColor="@color/black"></TextView>
 
                 <TextView
@@ -56,7 +56,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/nama"
-                    android:text="NIM         : 2011527001"
+                    android:text="NIM         : 2011521011"
                     android:textColor="@color/black"></TextView>
 
                 <TextView
@@ -64,7 +64,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/nim"
-                    android:text="Instansi  : Semen Padang"
+                    android:text="Instansi  : BPS"
                     android:textColor="@color/black"></TextView>
 
                 <TextView
@@ -72,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tempat"
-                    android:text="Anggota  : Farras, Daffa, Dilla, Ayu"
+                    android:text="Anggota  : Farras, Daffa, Dila, Ayu"
                     android:textColor="@color/black"></TextView>
 
                 <Button
@@ -96,8 +96,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             app:cardCornerRadius="16dp">
@@ -144,96 +144,6 @@
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            app:cardCornerRadius="16dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="32dp">
-
-                <TextView
-                    android:id="@+id/seminar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Seminar KP"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/daftar"
-                    android:layout_width="117dp"
-                    android:layout_height="37dp"
-                    android:layout_below="@+id/seminar"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/btn_login"
-                    android:text="Daftar"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            app:cardCornerRadius="16dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="16dp">
-
-                <TextView
-                    android:id="@+id/list2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="8dp"
-                    android:paddingRight="1dp"
-                    android:text="Laporan Akhir"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/buttonlist2"
-                    android:layout_width="167dp"
-                    android:layout_height="36dp"
-                    android:layout_below="@+id/list2"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="2dp"
-                    android:background="@drawable/btn_login"
-                    android:text="lengkapi Laporan"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-
-                <ImageView
-                    android:layout_width="143dp"
-                    android:layout_height="120dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginEnd="80dp"
-                    android:layout_toStartOf="@+id/list2"
-                    android:maxHeight="100dp"
-                    android:src="@drawable/bisnis" />
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
 
 
     </LinearLayout>

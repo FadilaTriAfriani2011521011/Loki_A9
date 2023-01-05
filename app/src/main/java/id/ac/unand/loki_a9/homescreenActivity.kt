@@ -14,7 +14,7 @@ class homescreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homescreen)
         supportActionBar?.hide()
-
+//button
         imageView11 = findViewById(R.id.imageView11)
         imageView11.setOnClickListener{
             intent = Intent(applicationContext, ListPengajuanKPActivity::class.java)
@@ -25,11 +25,7 @@ class homescreenActivity : AppCompatActivity() {
             intent = Intent(applicationContext, profileActivity::class.java)
             startActivity(intent)
         }
-        imageView7 = findViewById(R.id.imageView7)
-        imageView7.setOnClickListener{
-            intent = Intent(applicationContext, seminarKPActivity::class.java)
-            startActivity(intent)
-        }
+
         imageView8 = findViewById(R.id.imageView8)
         imageView8.setOnClickListener{
             intent = Intent(applicationContext, DetailKP2Activity::class.java)

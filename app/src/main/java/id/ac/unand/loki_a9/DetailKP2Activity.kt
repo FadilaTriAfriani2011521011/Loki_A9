@@ -23,17 +23,5 @@ class DetailKP2Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnInputDataSeminarKPSeminarKP: Button = findViewById(R.id.daftar)
-        btnInputDataSeminarKPSeminarKP.setOnClickListener {
-            intent = Intent(this, InputDataSeminarKPActivity::class.java)
-            startActivity(intent)
-        }
-
-        val btnTampilanLaporanAkhirKP: Button = findViewById(R.id.buttonlist2)
-        btnTampilanLaporanAkhirKP.setOnClickListener {
-            intent = Intent(this, tampilanLaporanAkhirKPActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 }

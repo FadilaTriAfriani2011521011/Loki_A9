@@ -8,13 +8,12 @@ import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import id.ac.unand.loki_a9.databinding.ActivityEditProfileBinding
+import id.ac.unand.loki_a9.retrofit.Config
+import id.ac.unand.loki_a9.retrofit.Login
+import id.ac.unand.loki_a9.retrofit.UpdateProfilResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import id.ac.unand.loki_a9.retrofit.Login
-import id.ac.unand.loki_a9.retrofit.UpdateProfilResponse
-import id.ac.unand.loki_a9.retrofit.User
-import id.ac.unand.loki_a9.retrofit.Config
 
 
 class edit_profileActivity : AppCompatActivity() {
@@ -32,15 +31,9 @@ class edit_profileActivity : AppCompatActivity() {
         binding.editEmail.setText(getEmail)
 
 
-        val btnganti_pass: Button = findViewById(R.id.button4)
-        btnganti_pass.setOnClickListener {
-            intent = Intent(this, ganti_passActivity::class.java)
-            startActivity(intent)
-        }
         val btnsave: Button = findViewById(R.id.button1000)
         btnsave.setOnClickListener {
-//            intent = Intent(this, profileActivity::class.java)
-//            startActivity(intent)
+
             val sharedPref = getSharedPreferences("sharedpref", Context.MODE_PRIVATE)?: return@setOnClickListener
             val token = sharedPref.getString("TOKEN",null)
 
@@ -70,7 +63,7 @@ class edit_profileActivity : AppCompatActivity() {
                         finish()
 
                     } else {
-                        Toast.makeText(this@edit_profileActivity, "Salah", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@edit_profileActivity, "Data Yang Anda Inputkan Salah", Toast.LENGTH_SHORT).show()
                     }
                 }
             })

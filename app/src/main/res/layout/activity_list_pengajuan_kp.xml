@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ListPengajuanKPActivity">
 
-    <Button
-        android:id="@+id/button3000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Daftar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv_pengajuan" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
@@ -32,8 +21,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_pengajuan"
-        android:layout_width="389dp"
-        android:layout_height="500dp"
+        android:layout_width="399dp"
+        android:layout_height="588dp"
         android:layout_marginTop="15dp"
         android:paddingBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -29,4 +29,23 @@ interface Login {
     ):Call<ChangePasswordResponse>
 //    @POST("/api/logout")
 //    fun logout(@Header("Authorization") token: String):Call<LogoutResponse>
+    @GET("/api/my-internship/{id}/logbook/{id_logbook}")
+    fun detail_logbook(@Header("Authorization")token: String,
+                       @Path("id") id:Int,
+                       @Path("id_logbook") id_logbook: String?)
+    :Call<DetailLogbookResponse>
+
+    @GET("/api/my-internship/{id}/logbook")
+    fun list_logbook(@Header("Authorization")token: String,
+                     @Path("id") id: Int
+    ):Call<ListLogbookResponse>
+
+    @FormUrlEncoded
+    @POST("/api/my-internship/{id}/logbook")
+    fun tambah_logbook(@Header("Authorization")token: String,
+                       @Path("id") id: Int,
+                       @Path("id_logbook") id_logbook: String?,
+                       @Field("status") status:Int,
+                       @Field("note") note:String
+    ):Call<TambahLogbookResponse>
 }

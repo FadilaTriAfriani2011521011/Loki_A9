@@ -10,24 +10,13 @@ class detailKPActivity : AppCompatActivity() {
     private lateinit var Home1 : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail_kp)
+        setContentView(R.layout.activity_detail_kp2)
         supportActionBar?.hide()
 
-        val btnTampilanLaporanAkhirKP: Button = findViewById(R.id.button11)
-        btnTampilanLaporanAkhirKP.setOnClickListener {
-            intent = Intent(this, tampilanLaporanAkhirKPActivity::class.java)
-            startActivity(intent)
-        }
 
         val btnListLogbook: Button = findViewById(R.id.button9)
         btnListLogbook.setOnClickListener {
             intent = Intent(this, ListLogbookActivity::class.java)
-            startActivity(intent)
-        }
-
-        val btnInputDataSeminarKPSeminarKP: Button = findViewById(R.id.button10)
-        btnInputDataSeminarKPSeminarKP.setOnClickListener {
-            intent = Intent(this, InputDataSeminarKPActivity::class.java)
             startActivity(intent)
         }
 

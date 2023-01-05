@@ -65,13 +65,11 @@ class UploadBalasanKPActivity : AppCompatActivity() {
 
         val btn: Button = findViewById(R.id.buttonLogin)
         btn.setOnClickListener {
-            //intent = Intent(this, detailKP::class.java)
-            //startActivity(intent)
-            //sendNotification()
+
         }
         Back2 = findViewById(R.id.Back2)
         Back2.setOnClickListener {
-           intent = Intent(applicationContext, detailKPActivity::class.java)
+           intent = Intent(applicationContext, DetailKP2Activity::class.java)
             startActivity(intent)
 
         }
