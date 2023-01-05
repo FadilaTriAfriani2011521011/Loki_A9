@@ -51,16 +51,17 @@ class ListLogbookActivity : AppCompatActivity() {
             }
 
         })
+        val btn: Button = findViewById(R.id.buttontbh)
+        btn.setOnClickListener {
+            val intent = Intent(this@ListLogbookActivity, TambahLogbookActivity::class.java)
+            startActivity(intent)
+        }
+
         Back3 = findViewById(R.id.Back3)
         Back3.setOnClickListener {
             intent = Intent(applicationContext, DetailKP2Activity::class.java)
             startActivity(intent)
         }
-
-        val btn: Button = findViewById(R.id.buttontbh)
-        btn.setOnClickListener {
-            intent = Intent(this, TambahLogbookActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
+

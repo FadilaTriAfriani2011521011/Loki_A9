@@ -14,7 +14,7 @@ class absenKPActivity : AppCompatActivity() {
 
         imageView = findViewById(R.id.imageView)
         imageView.setOnClickListener{
-            intent = Intent(applicationContext, seminarKPActivity::class.java)
+            intent = Intent(applicationContext, AbsenSeminarActivity::class.java)
             startActivity(intent)
         }
     }
