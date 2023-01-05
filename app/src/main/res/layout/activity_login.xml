@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".login" >
+    tools:context=".loginActivity" >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -84,6 +84,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView11">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:hint="Username" />
@@ -110,6 +111,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout49">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPassword"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:hint="Password" />

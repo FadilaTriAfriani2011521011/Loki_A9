@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InputDataSeminarKP"
+    tools:context=".InputDataSeminarKPActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="18dp">
 
@@ -12,149 +12,6 @@
         android:id="@+id/textView_dataseminarKP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="55dp"
-        android:text="@string/data_seminar_kp"
-        android:textColor="#007AFF"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView_judul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/judul"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_dataseminarKP" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName_judul"
-        android:layout_width="322dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/custom_colom"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_judul"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/textView_dosenPembimbing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/dosen_pembimbing"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_judul" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName_dosenPembimbing"
-        android:layout_width="322dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/custom_colom"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_dosenPembimbing"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/textView_instansikerjaKP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/instansi_kerja_praktek"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_dosenPembimbing" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName_instansikerjaKP"
-        android:layout_width="322dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/custom_colom"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_instansikerjaKP"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/textView_alamat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/alamat_kerja_praktek"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_instansikerjaKP" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName_alamatKP"
-        android:layout_width="322dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/custom_colom"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_alamat"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/textView_tanggalKP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/tanggal_kerja_praktek"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_alamatKP" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName_tanggalKP"
-        android:layout_width="322dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/custom_colom"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_tanggalKP"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="80dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
-        android:contentDescription="@string/todo_InputdataseminarKP"
-        android:focusable="true" />
-
         android:layout_marginTop="44dp"
         android:text="Data Seminar KP"
         android:textColor="#FF007AFF"
@@ -175,6 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout40"
         app:srcCompat="@drawable/next" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout36"

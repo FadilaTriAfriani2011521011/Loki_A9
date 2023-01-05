@@ -1,50 +1,5 @@
 <resources>
     <string name="app_name">Loki_A9</string>
-
-    <string name="textview">TextView</string>
-    <string name="button_icon_desc">button</string>
-    <string name="title_activity_laporan_kp">LaporanKP</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="form_laporan_kp">Form Laporan KP</string>
-    <string name="nama">Nama</string>
-    <string name="nim">NIM</string>
-    <string name="dosen_pembimbing">Dosen Pembimbing</string>
-    <string name="instansi_kerja_praktek">Instansi Kerja Praktek</string>
-    <string name="alamat_kerja_praktek">Alamat Kerja Praktek</string>
-    <string name="judul">Judul</string>
-    <string name="laporan_akhir_kerja_praktek">Laporan Akhir Kerja Praktek</string>
-    <string name="submit">Submit</string>
-    <string name="peserta_seminar_kp">Peserta Seminar KP</string>
-    <string name="anggota_1">Anggota 1</string>
-    <string name="nim1">NIM</string>
-    <string name="anggota_2">Anggota 2</string>
-    <string name="nama1">Nama</string>
-    <string name="nim2">NIM</string>
-    <string name="anggota_3">Anggota 3</string>
-    <string name="nama2">Nama</string>
-    <string name="nim3">NIM</string>
-    <string name="anggota_4">Anggota 4</string>
-    <string name="nama3">Nama</string>
-    <string name="nim4">NIM</string>
-    <string name="submit1">Submit</string>
-    <string name="data_seminar_kp">Data Seminar KP</string>
-    <string name="judul1">Judul</string>
-    <string name="dosen_pembimbing1">Dosen Pembimbing</string>
-    <string name="instansi_kerja_praktek1">Instansi Kerja Praktek</string>
-    <string name="alamat_kerja">Alamat Kerja</string>
-    <string name="tanggal_kerja_praktek">Tanggal Kerja Praktek</string>
-    <string name="nama0">Nama</string>
-    <string name="todo">TODO</string>
-    <string name="laporan_kp">Laporan KP</string>
-    <string name="laporanKP_nama">Nama</string>
-    <string name="LaporanKP_nama1">Nama</string>
-    <string name="laporanKP_nama2">Nama</string>
-    <string name="laporanKP_nama3">Nama</string>
-    <string name="todo_laporanakhirKP">TODO</string>
-    <string name="todo_InputdataseminarKP">TODO</string>
-
     <string name="button_1">Button_1</string>
     <string name="login">Welcome Back!</string>
     <string name="login1">Login</string>
@@ -66,5 +21,4 @@
     <string name="muhammaddoni_gmail_com">muhammaddoni@gmail.com</string>
     <string name="todo_InputdataseminarKP">input_data_seminar_kp</string>
     <string name="todo_laporanakhirKP">laporan_akhir_kp</string>
-
 </resources>
