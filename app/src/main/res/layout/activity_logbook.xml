@@ -15,13 +15,13 @@
         android:layout_marginEnd="5dp"
         android:text="Logbook"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/tanggalku"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tanggalku"
         android:layout_width="338dp"
         android:layout_height="29dp"
         android:layout_marginStart="30dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/judulcuy"
         android:layout_width="337dp"
         android:layout_height="27dp"
         android:layout_marginStart="30dp"
@@ -44,10 +44,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/tanggalku" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/kerjaku"
         android:layout_width="343dp"
         android:layout_height="241dp"
         android:layout_marginStart="30dp"
@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/judulcuy" />
 
     <TextView
         android:id="@+id/textView18"
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/kerjaku"
         app:layout_constraintVertical_bias="0.224"
         app:srcCompat="@drawable/letterr"
         tools:ignore="MissingConstraints" />

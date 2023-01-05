@@ -31,11 +31,21 @@ class ListLogbookActivity : AppCompatActivity() {
         binding = ActivityListLogbookBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val Back3 = binding.Back3
+        Back3.setOnClickListener {
+            intent = Intent(applicationContext, DetailKP2Activity::class.java)
+            startActivity(intent)
+        }
+
+        val btn: Button = findViewById(R.id.buttontbh)
+        btn.setOnClickListener {
+            intent = Intent(this, TambahLogbookActivity::class.java)
+            startActivity(intent)
+        }
         val adapter : LogbookAdapter = LogbookAdapter()
 
-        val sharedPrefToken = getSharedPreferences("sharedpref",Context.MODE_PRIVATE)?:return
-        val token = sharedPrefToken.getString("TOKEN",null)
-        val sharedPref = getSharedPreferences("mahapref",Context.MODE_PRIVATE)?:return
+        val sharedPref = getSharedPreferences("sharedpref",Context.MODE_PRIVATE)?:return
+        val token = sharedPref.getString("TOKEN",null)
         val id = sharedPref.getInt("id",2)
 
         val data = ArrayList<LogbooksItem>()
@@ -59,15 +69,15 @@ class ListLogbookActivity : AppCompatActivity() {
                 Log.d("list-book-debug", respon?.logbooks?.size.toString())
                 Log.d("list-book-debug", "respon : " + respon?.logbooks.toString())
 
-                adapter.setOnClickListener(object : LogbookAdapter.onClickListener{
+                adapter.setOnClickListener(object : LogbookAdapter.onItemClickListener{
                     override fun onItemClick(position: Int) {
-                        val position = respon?.logbooks?.get(position)
+                        val posisi = respon?.logbooks?.get(position)
                         val sharedPref = getSharedPreferences("logbookpref", MODE_PRIVATE)?:return
                         with(sharedPref.edit()){
-                            putString("id_logbook",position?.id.toString())
+                            putString("id_logbook",posisi?.id.toString())
                             apply()
                         }
-                        Log.d("Detail-logbook",position.toString())
+                        Log.d("Detail-logbook",posisi.toString())
                         val intent = Intent(this@ListLogbookActivity,LogbookActivity::class.java)
 //
                         startActivity(intent)
@@ -83,16 +93,6 @@ class ListLogbookActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
 
-        val Back3 = binding.Back3
-        Back3.setOnClickListener {
-            intent = Intent(applicationContext, DetailKP2Activity::class.java)
-            startActivity(intent)
-        }
 
-        val btn: Button = findViewById(R.id.buttontbh)
-        btn.setOnClickListener {
-            intent = Intent(this, TambahLogbookActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
